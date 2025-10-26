@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moldy App Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #111;
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            color: #222;
+        }
+        h3 {
+            color: #444;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .header-info {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p style="text-align: center; font-size: 1.1rem; color: #555;">for Moldy (Food Freshness Checker)</p>
+
+        <p><strong>Last Updated:</strong> October 26, 2025</p>
+
+        <div class="header-info">
+            <ul>
+                <li><strong>Developer:</strong> Younen</li>
+                <li><strong>App Name:</strong> Moldy (Food Freshness Checker)</li>
+                <li><strong>Package ID:</strong> <code>com.czups.moldy</code></li>
+            </ul>
+        </div>
+
+        <p>
+            This Privacy Policy describes how Moldy ("we," "us," or "our") handles
+            information when you use our mobile application. We are committed to
+            protecting your privacy. This app is designed to be fully anonymous and
+            does not collect, store, or share any of your personal information.
+        </p>
+
+        <h2>1. Data We Do NOT Collect</h2>
+        <p>
+            <strong>We want to be crystal clear: Moldy does not collect any personal data.</strong>
+        </p>
+        <ul>
+            <li>
+                <strong>No User Accounts:</strong> The app does not require you to create
+                an account, log in, or provide any personal information (like your
+                name, email address, or phone number).
+            </li>
+            <li>
+                <strong>No Personal Information:</strong> We do not collect, store, or
+                transmit any personally identifiable information.
+            </li>
+            <li>
+                <strong>No Location Data:</strong> The app does not access, collect, or
+                use your device's location (GPS or network-based).
+            </li>
+            <li>
+                <strong>No Device Identifiers:</strong> We do not collect unique device
+                identifiers (like IMEI, Android ID, or Advertising ID).
+            </li>
+            <li>
+                <strong>No Analytics or Tracking:</strong> We do not use any first-party
+                or third-party analytics, tracking, or advertising SDKs (such as
+                Google Analytics, Firebase, or AdMob).
+            </li>
+        </ul>
+
+        <h2>2. Permissions and Data Processing</h2>
+        <p>
+            Moldy requires two permissions to function. Here is an explanation of
+            why they are needed and how any data is handled.
+        </p>
+
+        <h3>a) Camera & Photo Library Access (Optional)</h3>
+        <p>
+            <strong>Purpose:</strong> To provide the core app functionality, which is
+            analyzing the freshness of a food item. You can either take a new
+            photo of your food using the <code>Camera</code> or select an existing
+            photo from your device's <code>Gallery/Photos</code>.
+        </p>
+        <p><strong>Data Handling:</strong></p>
+        <ol>
+            <li>You select or capture an image.</li>
+            <li>
+                The image is sent securely using HTTPS to our backend API for
+                analysis.
+            </li>
+            <li>
+                The API's AI model analyzes the image and returns a freshness
+                classification (e.g., "fresh" or "rotten") and a confidence score.
+            </li>
+            <li>
+                <strong>The image is deleted from the server immediately after the
+                analysis is complete. We do not store your photos on our
+                servers.</strong>
+            </li>
+            <li>
+                The image is not stored within the app's private storage after
+                analysis.
+            </li>
+        </ol>
+
+        <h3>
+            b) Internet Access (<code>android.permission.INTERNET</code>)
+        </h3>
+        <p>
+            <strong>Purpose:</strong> Internet access is required to securely send the
+            food image to our backend API for AI analysis and to receive the
+            analysis result.
+        </p>
+        <p>
+            <strong>Data Handling:</strong> All communication with our API is encrypted
+            using HTTPS. We use the OkHttp library for this network communication.
+        </p>
+
+        <h2>3. Third-Party Data Processing</h2>
+        <p>
+            To perform the AI analysis, Moldy uses a backend API.
+        </p>
+        <ul>
+            <li>
+                <strong>Service Provider:</strong> Our backend AI model is hosted on
+                <strong>Railway.app</strong> (US-based servers).
+            </li>
+            <li>
+                <strong>API Endpoint:</strong>
+                <code>https://food-freshness-api-moldy-production.up.railway.app</code>
+            </li>
+            <li>
+                <strong>Purpose:</strong> Railway.app acts as our data processor. It
+                hosts the AI model that receives the image, performs the inference,
+                and sends back the result.
+            </li>
+            <li>
+                <strong>Data Policy:</strong> As the data controller, we have instructed
+                the service to <strong>delete all user-submitted images immediately
+                after processing.</strong> No images or analysis results are stored or
+                logged on the server. Railway.app may collect standard, non-personal
+                server logs (such as IP addresses) for its own security, debugging,
+                and operational purposes, which is standard practice for any
+                internet server. We do not have access to this data.
+            </li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <ul>
+            <li>
+                <strong>On-Device:</strong> The app does not store your photos or any
+                personal data on your device.
+            </li>
+            <li>
+                <strong>On-Server:</strong> User-submitted photos are processed in
+                real-time and are <strong>deleted immediately</strong> from the
+                server's memory. They are never written to disk or stored in a
+                database.
+            </li>
+        </ul>
+
+        <h2>5. User Rights</h2>
+        <p>
+            Since we do not collect any personal information or create user
+            accounts, there is no personal data for you to access, correct, or
+            delete. You can revoke the app's permissions (Camera, Photos) at any
+            time through your device's system settings. You can completely remove
+            the app and any associated data by uninstalling it from your device.
+        </p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>
+            We do not knowingly collect any personal information from anyone,
+            including children. The app's analysis is anonymous and does not store
+            data.
+        </p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy from time to time. We will notify you
+            of any changes by posting the new Privacy Policy on this page. You are
+            advised to review this Privacy Policy periodically for any changes.
+        </p>
+
+        <h2>8. Contact Us</h2>
+        <p>
+            If you have any questions about this Privacy Policy, please contact the
+            developer:
+        </p>
+        <ul>
+            <li><strong>Developer:</strong> Younen</li>
+            <li>
+                <strong>Email:</strong>
+                pfjakubczyz@gmail.com
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
